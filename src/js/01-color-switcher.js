@@ -8,7 +8,8 @@ buttonStartRef.addEventListener('click', startInterval);
 buttonStopRef.addEventListener('click', stopInterval);
 
 
-function startInterval () { 
+function startInterval() { 
+    changeBgColor();
     intervalId = setInterval(changeBgColor, 1000);
     buttonStartRef.disabled = true;
     buttonStopRef.disabled = false;
