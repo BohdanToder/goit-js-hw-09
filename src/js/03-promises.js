@@ -7,9 +7,9 @@ formRef.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event) {
   event.preventDefault();
 
-  const amount = +formRef.elements.amount.value;
-  const step = +formRef.elements.step.value;
-  let delay = +formRef.elements.delay.value;
+  const amount = Number(formRef.elements.amount.value);
+  const step = Number(formRef.elements.step.value);
+  let delay = Number(formRef.elements.delay.value);
 
   for (let i = 1; i <= amount; i += 1) {
     let position = i;
